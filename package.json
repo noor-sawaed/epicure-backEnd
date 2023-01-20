@@ -2,7 +2,7 @@
   "name": "epicure-backend",
   "version": "1.0.0",
   "description": "serverside for epicure",
-  "main": "index.js",
+  "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +24,10 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "ts-node": "^10.9.1"
   }
 }
