@@ -36,6 +36,10 @@ const dishesSchema = new mongoose.Schema(
         restaurantId: {
             type: Number,
             required: true,
+        },
+        dishType: {
+            type: String,
+            required: true,
         }
     },
     { timestamps: true }

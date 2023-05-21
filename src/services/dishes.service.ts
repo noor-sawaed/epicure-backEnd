@@ -7,9 +7,9 @@ export class DishesService {
     return res;
   }
 
-  public async getDish(param: { [key: string]: string }) {
+  public async getDish(dishID: Number) {
     const dal = new DishesDal();
-    const res = await dal.getDish(param);
+    const res = await dal.getDish(dishID);
     return res;
   }
 

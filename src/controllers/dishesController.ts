@@ -15,8 +15,8 @@ export class DishesController {
   public static async getDish(req: Request, res: Response) {
     try {
       const service = new DishesService();
-      const param = req.body;
-      const dish = await service.getDish(param);
+      const {dishID} = req.query;
+      const dish = await service.getDish(Number(dishID));
       return res.send(dish);
     } catch (error) {
       return res.send(error);

@@ -11,6 +11,7 @@ export class DishesDal {
             type: dish.type,
             signature: dish.signature,
             restaurantID: dish.restaurantID,
+            dishType: dish.dishType
         });
 
         dish.save(function (err: any, results: any) {
@@ -25,17 +26,22 @@ export class DishesDal {
         return Dishes.find(query);
     }
 
-    public async getDish(param: { [key: string]: any }) {
-        const data = await Dishes.aggregate([
-            {
-                $match: {
-                    $or: [
-                        { dishID: param.dishID }, { name: `${param.name}` }
-                    ]
-                }
-            },
+    public async getDish(param: Number) {
+        // const data = await Dishes.aggregate([
+        //     {
+        //         $match: {
+        //             $or: [
+        //                 { dishID: param }
+        //             ]
+        //         }
+        //     },
+        // ]);
+        const data = await Dishes.findOne(
+         { $or: [
+            { dishID: param }
+        ]}
 
-        ]);
+        );
         return data;
     }
 
