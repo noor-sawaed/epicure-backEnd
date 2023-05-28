@@ -46,7 +46,6 @@ build/Release
 
 # Dependency directories
 node_modules/
-functions/
 # Optional npm cache directory
 .npm
 
@@ -66,3 +65,4 @@ functions/
 .env
 
 /src/db/secret.ts
+/functions/
