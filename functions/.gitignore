@@ -7,4 +7,4 @@ typings/
 
 # Node.js dependency directory
 node_modules/
-/src/db/secrets.ts
+/src/db/secret.ts
