@@ -1,4 +1,4 @@
-import Restaurants from "../db/models/restaurants";
+const Restaurants = require("../db/models/restaurants");
 
 export class RestaurantsDal {
   public async getPopularRestaurants() {

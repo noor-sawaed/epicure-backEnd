@@ -5,9 +5,9 @@ const usersRoutes = require('./users.routes');
 const dishesRoutes = require('./dishes.routes');
 const router = express.Router();
 
-router.use("/api/chefs/", chefsRoutes);
-router.use("/api/restaurants/", restaurantsRoutes);
-router.use("/api/users/",usersRoutes);
-router.use("/api/dishes/",dishesRoutes);
+router.use("/api/chefs", chefsRoutes);
+router.use("/api/restaurants", restaurantsRoutes);
+router.use("/api/users",usersRoutes);
+router.use("/api/dishes",dishesRoutes);
 
 module.exports = router;

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ChefsController } from "../controllers/chefsController";
+const { ChefsController } = require("../controllers/chefsController");
 
 const router = Router();
 

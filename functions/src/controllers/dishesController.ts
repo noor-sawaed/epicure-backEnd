@@ -1,13 +1,16 @@
 import { Request, Response } from "express";
-import { DishesService } from "../services/dishes.service"; //!need to change
+const { DishesService } = require("../services/dishes.service"); 
 
 export class DishesController {
   public static async getDishes(req: Request, res: Response) {
     try {
+      console.log("1111111")
       const service = new DishesService();
       const dishes = await service.getDishes();
+      // const dishes = {name :"someres1"};
       return res.send(dishes);
     } catch (error) {
+      console.log("111111 errorrrr",error)
       return res.send(error);
     }
   }

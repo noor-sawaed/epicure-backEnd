@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { DishesController } from "../controllers/dishesController";
+const { DishesController } = require("../controllers/dishesController");
 
 const router = Router();
 

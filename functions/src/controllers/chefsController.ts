@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ChefsService } from "../services/chefs.service";
+const { ChefsService } = require("../services/chefs.service");
 
 export class ChefsController {
   public static async getChefs(req: Request, res: Response) {
