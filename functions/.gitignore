@@ -9,4 +9,5 @@ typings/
 node_modules/
 
 # files
-/src/db/secret.ts
+
+src/db/secrets.ts
