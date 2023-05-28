@@ -66,4 +66,4 @@ node_modules/
 .env
 
 /src/db/secret.ts
-/functions/src/db/secret.ts
+/functions
